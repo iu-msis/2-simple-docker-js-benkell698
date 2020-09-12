@@ -4,7 +4,6 @@
   <title>Book Information</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="css/site.css">
-  <link rel="javascript" href="js/site.js">
 </head>
 <body>
   <h1 id="pagetitle">Book Information</h1>
@@ -19,10 +18,8 @@
   </div>
   <div class="container-fluid">
     <main class="row">
-    <table class="table table-bordered table-striped table-hover table-condensed">
+    <table id="SortTable" class="table table-bordered table-striped table-hover table-condensed">
         <thead>
-          <script src='tablesort.number.js'></script>
-          <script src='tablesort.date.js'></script>
             <tr>
                <th>Title</th>
                <th>Author(s)</th>
@@ -81,5 +78,9 @@
             <label for="pagecount">Page Count: </label><input type="text" name="pagecount" id="pagecount"><br>
             <label for="msrp">MSRP: </label><input type="text" name="msrp" id="msrp"><br>
         <input type="submit" name="submit" id="submit" value="Submit Addition" class="subbutton">
+        <script src="js/tablesort.min.js"></script>
+        <script>
+            new Tablesort(document.getElementById('SortTable'));
+        </script>
 </body>
 </html>
