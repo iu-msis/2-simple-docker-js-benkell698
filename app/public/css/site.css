@@ -1,0 +1,88 @@
+html {
+  background-color: lightgray;
+  text-color: black;
+}
+
+h1 {
+  background-color: navy;
+  color: white;
+  padding-left: 10px;
+  padding-righ: 10px;
+}
+
+#pagetitle {
+    background-color: navy;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+h3 {
+    color: navy;
+    padding-left: 10px;
+    padding-righ: 10px;
+}
+
+main {
+  border-style: solid;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+header {
+  border-style: solid;
+  border: 2px solid black;
+  backgorund-color: navy;
+  color: white;
+  padding: 10px;
+  text-align: center
+}
+
+footer {
+  border-style: solid;
+  border: 2px solid black;
+  backgorund-color: navy;
+  color: white;
+  padding: 10px;
+  text-align: center
+}
+
+nav {
+  background-color: navy;
+}
+
+.nav_links {
+    color: navy;
+    background-color: lightgray;
+    text-decoration: none;
+    border: 1px solid navy;
+    padding: 5px;
+}
+
+.nav_links:hover {
+    color: white;
+    background-color: navy;
+    border: 1px solid black;
+}
+
+form {
+  padding: 10px;
+  border: 1px solid navy;
+}
+
+input {
+  margin-bottom: 5px;
+}
+
+.subbutton {
+  background-color: white;
+  border: 1px solid navy;
+  padding: 5px 10px 5px 10px;
+  color: navy;
+}
+
+.subbutton:hover {
+  background-color: navy;
+  color: white;
+  border: 1px solid white;
+}

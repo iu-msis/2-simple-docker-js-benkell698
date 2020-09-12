@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+  <title>Book Information</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <h1 id="pagetitle">Book Information</h1>
+  <nav>
+      <a class="nav_links" href="index.html">Home</a>
+      <a class="nav_links" href="profile.html">Profile</a>
+      <a class="nav_links" href="bookinfo.html">Book Information</a>
+  </nav>
+  <div class="container-fluid">
+    <a href="https://media.cntraveler.com/photos/54945dd276e8ba884fa949d8/16:9/w_2560%2Cc_limit/DC%252520Bookstores-Kramerbooks-resize.jpg"><img src="images/Bookstore.jpg" width="200px" height="200px"/>
+    <p>The Storefront (<a href="https://www.cntraveler.com/stories/2014-12-19/washington-dc-best-and-used-bookstores-politics-and-prose-kramerbooks">Image Source</a>)</p>
+  </div>
+  <div class="container-fluid">
+    <main class="row">
+    <table class="table table-bordered table-striped table-hover table-condensed">
+        <thead>
+            <tr>
+               <th>Title</th>
+               <th>Author(s)</th>
+               <th>Year Published</th>
+               <th>Publisher</th>
+               <th>Page Count</th>
+               <th>MSRP</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>A Game of Thrones</td>
+              <td>George R. R. Martin</td>
+              <td>1996</td>
+              <td>Bantam Books</td>
+              <td>694</td>
+              <td>$9.99</td>
+            </tr>
+            <tr>
+               <td>The Fellowship of the Ring</td>
+               <td>J. R. R. Tolkien</td>
+               <td>1954</td>
+               <td>George Allen & Unwin</td>
+               <td>423</td>
+               <td>$16.99</td>
+            </tr>
+            <tr>
+               <td>Harry Potter and the Sorcerer's Stone</td>
+               <td>J. K. Rowling</td>
+               <td>1998</td>
+               <td>Scholastic Corporation</td>
+               <td>309</td>
+               <td>$13.95</td>
+            </tr>
+            <tr>
+               <td>The Name of the Wind</td>
+               <td>Patrick Rothfuss</td>
+               <td>2007</td>
+               <td>DAW Books</td>
+               <td>662</td>
+               <td>$19.95</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Information provided by the Publisher.</td>
+            </tr>
+        </tfoot>
+        </table>
+        <form action="" method="get">
+            <label for="booktitle">Title: </label><input type="text" name="booktitle" id="booktitle"><br>
+            <label for="author">Author(s): </label><input type="text" name="author" id="author"><br>
+            <label for="yearpublished">Year Published: </label><input type="text" name="yearpublished" id="yearpublished"><br>
+            <label for="publisher">Publisher: </label><input type="text" name="publisher" id="publisher"><br>
+            <label for="pagecount">Page Count: </label><input type="text" name="pagecount" id="pagecount"><br>
+            <label for="msrp">MSRP: </label><input type="text" name="msrp" id="msrp"><br>
+        <input type="submit" name="submit" id="submit" value="Submit Addition" class="subbutton">
+</body>
+</html>
