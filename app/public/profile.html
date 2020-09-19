@@ -12,31 +12,37 @@
       <a class="nav_links" href="profile.html">Profile</a>
       <a class="nav_links" href="bookinfo.html">Book Information</a>
   </nav>
-  <div class="container-fluid">
-    <a href="https://dunderbeck1980.files.wordpress.com/2013/06/gino-vannelli-blog.jpg"><img src="images/Gino.jfif" width="200px" height="200px"/>
-    <p>Gino Orpwood (<a href="https://dunderbeck1980.wordpress.com/2013/06/16/gino-vannelli-the-legacy-of-an-unheralded-funkjazz-icon/">Image Source</a>)</p>
-  </div>
-  <div class="container-fluid">
-    <main class="row">
-    <table class="table table-bordered table-striped table-hover table-condensed">
-      <thead>
-          <tr>
-             <th>Name</th>
-             <th>Country</th>
-             <th>Birthdate</th>
-             <th>Age</th>
-             <th>Email Address</th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr>
-            <td>Gino Orpwood</td>
-            <td>France</td>
-            <td>7/1/1989</td>
-            <td>31</td>
-            <td><a href="mailto:gorpwoodlive.com">gorpwood@live.com</a></td>
-          </tr>
-      </tbody>
-      </table>
+    <div class="container-fluid" id='userProfile'>
+      <main class="row">
+      <table class="table table-bordered table-striped table-hover table-condensed">
+        <thead>
+            <tr>
+              <th>Photograph</th>
+              <th>Name</th>
+              <th>Country</th>
+              <th>DOB</th>
+              <th>Age</th>
+              <th>Email Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td><a v-bind:href="userImage"><img v-bind:src="userImage"></a></td>
+              <td>{{userName}}</td>
+              <td>{{userCountry}}</td>
+              <td>{{userDob}}</td>
+              <td>{{userAge}}</td>
+              <td><a href="mailto:{{userEmail}}">{{userEmail}}</a></td>
+            </tr>
+        </tbody>
+        </table>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script src="js/profile.js"></script>
+
 </body>
 </html>
