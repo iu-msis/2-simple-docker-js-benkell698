@@ -2,7 +2,7 @@ var app = new Vue({
   el: '#userProfile',
   data: {
     userName: '',
-    userTimezone: '',
+    userCountry: '',
     userDob: '',
     userAge: '',
     userEmail: '',
