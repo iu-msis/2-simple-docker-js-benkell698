@@ -6,6 +6,7 @@ var app = new Vue({
     userDob: '',
     userAge: '',
     userEmail: '',
+    userImage: '',
   },
 
   created() {
@@ -19,6 +20,7 @@ var app = new Vue({
       .then(data => {
         var userData = data.results[0];
         console.log(userData);
+        this.userImage = userData.picture.medium;
         this.userName = userData.name.first + " " + userData.name.last;
         this.userCountry = userData.timezone;
         this.userDob = userData.dob.date;
