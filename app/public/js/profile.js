@@ -22,7 +22,7 @@ var app = new Vue({
         console.log(userData);
         this.userImage = userData.picture.medium;
         this.userName = userData.name.first + " " + userData.name.last;
-        this.userCountry = userData.timezone;
+        this.userCountry = userData.timezone.description;
         this.userDob = userData.dob.date;
         this.userAge = userData.dob.age;
         this.userEmail = userData.email;
