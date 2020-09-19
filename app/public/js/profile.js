@@ -2,8 +2,8 @@ var app = new Vue({
   el: '#userProfile',
   data: {
     userName: '',
-    userCountry: '',
-    userBirth: '',
+    userTimezone: '',
+    userDob: '',
     userAge: '',
     userEmail: '',
   },
@@ -21,7 +21,7 @@ var app = new Vue({
         console.log(userData);
         this.userName = userData.name.first + " " + userData.name.last;
         this.userCountry = userData.country;
-        this.userBirth = userData.birthdate;
+        this.userDob = userData.dob;
         this.userAge = userData.age;
         this.userEmail = userData.email;
       })
