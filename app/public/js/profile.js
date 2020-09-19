@@ -1,11 +1,11 @@
 var app = new Vue({
   el: '#userProfile',
   data: {
-    userName: 'Hello Vue!'
-    userCountry:
-    userBirth
-    userAge
-    userEmail
+    userName: '',
+    userCountry: '',
+    userBirth: '',
+    userAge: '',
+    userEmail: '',
   },
 
   created() {
