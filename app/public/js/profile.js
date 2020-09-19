@@ -23,7 +23,7 @@ var app = new Vue({
         this.userImage = userData.picture.medium;
         this.userName = userData.name.first + " " + userData.name.last;
         this.userCountry = userData.location.country;
-        this.userDob = userData.dob.date[5]+ userData.dob.date[6] + '/' + userData.dob.date[8] + userData.dob.date[0] + userData.dob.date[1] + userData.dob.date[2] + userData.dob.date[3];
+        this.userDob = userData.dob.date[5]+ userData.dob.date[6] + '/' + userData.dob.date[8] + userData.dob.date[9] + '/' + userData.dob.date[0] + userData.dob.date[1] + userData.dob.date[2] + userData.dob.date[3];
         this.userAge = userData.dob.age;
         this.userEmail = userData.email;
       })
