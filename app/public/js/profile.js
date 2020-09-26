@@ -20,6 +20,17 @@ var app = new Vue({
       console.log(this.data);
     },
 
+    profile.ready(function () {
+      profile.on('click', '.refresher', function() {
+        url: 'https://randomuser.me/api/',
+        method: get,
+        dataType: 'json',
+        success: function(response) {
+          ('userProfile').html(response);
+
+        }
+      };
+    };
 
     fetchUser: function() {
       fetch('https://randomuser.me/api/')
