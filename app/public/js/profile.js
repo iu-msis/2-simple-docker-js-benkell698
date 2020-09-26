@@ -28,9 +28,9 @@ var app = new Vue({
         this.userEmail = userData.email;
       })
     },
-    newUser: function() {
-      fetch('https://randomuser.me/api/')
-      
+    // newUser: function() {
+    //   fetch('https://randomuser.me/api/')
+    // 
       })
     },
     }
