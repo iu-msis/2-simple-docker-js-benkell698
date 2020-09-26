@@ -27,12 +27,7 @@ var app = new Vue({
         this.userAge = userData.dob.age;
         this.userEmail = userData.email;
       })
-    },
-    // newUser: function() {
-    //   fetch('https://randomuser.me/api/')
-    // 
-      })
-    },
+    }
     }
   }
 });
