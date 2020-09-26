@@ -32,8 +32,7 @@ var app = new Vue({
     //   fetch('https://randomuser.me/api/', {
     //     method: "get",
     //     data: data
-      })
-    };
-    }
+    //   })
+    // };
   }
 });
