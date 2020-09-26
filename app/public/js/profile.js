@@ -28,6 +28,5 @@ var app = new Vue({
         this.userEmail = userData.email;
       })
     }
-    }
   }
 });
