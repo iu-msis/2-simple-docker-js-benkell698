@@ -14,19 +14,19 @@ var app = new Vue({
   },
 
   methods: {
-    handleprof( evt){
-      evt.preventDefault();
-      console.log("Creating...!");
-      console.log(this.data);
-    },
-
-    profile.ready(function () {
-      profile.on('click', '.refresher', function() {
-        url: 'https://randomuser.me/api/',
-        method: get,
-        dataType: 'json',
-        success: function(response) {
-          ('userProfile').html(response);
+    // handleprof( evt){
+    //   evt.preventDefault();
+    //   console.log("Creating...!");
+    //   console.log(this.data);
+    // },
+    //
+    // profile.ready(function () {
+    //   profile.on('click', '.refresher', function() {
+    //     url: 'https://randomuser.me/api/',
+    //     method: get,
+    //     dataType: 'json',
+    //     success: function(response) {
+    //       ('userProfile').html(response);
 
         }
       };
