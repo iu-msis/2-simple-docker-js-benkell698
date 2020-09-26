@@ -28,10 +28,10 @@ var app = new Vue({
         this.userEmail = userData.email;
       })
     };
-    newUser( evt ){
-      fetch('https://randomuser.me/api/', {
-        method: "get",
-        data: data
+    // newUser( evt ){
+    //   fetch('https://randomuser.me/api/', {
+    //     method: "get",
+    //     data: data
       })
     };
     }
