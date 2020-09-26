@@ -14,6 +14,13 @@ var app = new Vue({
   },
 
   methods: {
+    handleprof( evt){
+      evt.preventDefault();
+      console.log("Creating...!");
+      console.log(this.data);
+    },
+
+
     fetchUser: function() {
       fetch('https://randomuser.me/api/')
       .then(response => response.json())
