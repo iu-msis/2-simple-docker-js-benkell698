@@ -57,14 +57,14 @@ recordApp = new Vue({
     //   },
     }
   }
-  fetchUser(){
-    fetch('api/users/')
-    .then(response => response.json())
-    .then(json => {
-      this.users=json;
-      console.log(this.users);
-    })
-  }
+  // fetchUser(){
+  //   fetch('api/users/')
+  //   .then(response => response.json())
+  //   .then(json => {
+  //     this.users=json;
+  //     console.log(this.users);
+  //   })
+  // }
 
     }
   },

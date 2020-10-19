@@ -25,13 +25,12 @@
         </thead>
         <tbody id="commentTableBody">
           <tr>
-            <td></td>
-            <td></td>
+            <td>{{comments.id}}</td>
+            <td>{{comments.commentText}}</td>
           </tr>
         </tbody>
       </table>
       <form action="" method="get" id="newCommentForm">
-          <label for="booktitle">ID: </label><input type="text" name="booktitle" id="booktitle"><br>
-          <label for="author">Comment: </label><input type="text" name="author" id="commentText"><br>
+          <label for="comment">Comment: </label><input type="text" name="comment" id="commentText"><br>
       <input type="submit" name="submit" id="submitNewComment" value="Submit Addition" class="subbutton">
       </form>
