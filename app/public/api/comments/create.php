@@ -18,7 +18,7 @@ $stmt = $db->prepare(
 
 $stmt->execute([
   $_POST['id'],
-  $_POST['commentText'],
+  $_POST['commentText']
 ]);
 
 // If needed, get auto-generated PK from DB
