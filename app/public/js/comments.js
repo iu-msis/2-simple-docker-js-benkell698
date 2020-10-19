@@ -1,4 +1,4 @@
-commentApp = new Vue({
+var app = new Vue({
   el: '#commmentTable',
   data: {
     comments: [{ //Holds the data from the database
