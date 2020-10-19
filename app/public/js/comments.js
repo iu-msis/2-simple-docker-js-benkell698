@@ -1,12 +1,11 @@
 var app = new Vue({
-  el: #commmentjs
+  el: '#commmentjs',
   data: {
     comments: [{
       id: '',
-      commentText: '',
+      commentText: ''
     }]
-  }
-})
+  },
 methods:{
   fetchUser(){
     fetch('api/comments/')
@@ -16,6 +15,7 @@ methods:{
       console.log(this.comments);
     });
   }
+}
 }
 
 
