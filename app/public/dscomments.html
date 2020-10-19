@@ -24,7 +24,7 @@
           </tr>
         </thead>
         <tbody id="commentTableBody">
-          <tr>
+          <tr class="comments" v-for="comment in comments">
             <td>{{comments.id}}</td>
             <td>{{comments.commentText}}</td>
           </tr>
