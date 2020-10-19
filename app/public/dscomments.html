@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  <title>Book Information</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <h1 id="pagetitle">Book Information</h1>
+  <nav>
+    <a class="nav_links" href="index.html">Home</a>
+    <a class="nav_links" href="profile.html">Profile</a>
+    <a class="nav_links" href="bookinfo.html">Book Information</a>
+    <a class="nav_links" href="old.html">Previous HW Page</a>
+    <a class="nav_links" href="dscomments.html">Comments</a>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <table id="commentTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Comment</th>
+          </tr>
+        </thead>
+        <tbody id="commentTableBody">
+          <tr>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <form action="" method="get" id="newCommentForm">
+          <label for="booktitle">ID: </label><input type="text" name="booktitle" id="booktitle"><br>
+          <label for="author">Comment: </label><input type="text" name="author" id="commentText"><br>
+      <input type="submit" name="submit" id="submitNewComment" value="Submit Addition" class="subbutton">
+      </form>
