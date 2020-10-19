@@ -1,13 +1,13 @@
 commentApp = new Vue({
   el: '#commmentTable',
   data: {
-    comments: [{
+    comments: [{ //Holds the data from the database
       id: '',
       commentText: ''
     }]
   },
 methods:{
-  fetchUser(){
+  fetchUser(){ //Grabs the API from the Vue.js app
     fetch('api/comments/')
     .then(response => response.json())
     .then(json => {

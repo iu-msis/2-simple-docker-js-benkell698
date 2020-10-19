@@ -1,5 +1,5 @@
 <?php
-
+//Runs the query for data retrieval
 require 'common.php';
 
 // Step 1: Get a datase connection from our helper class
