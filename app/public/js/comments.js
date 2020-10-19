@@ -8,11 +8,27 @@ commentApp = new Vue({
   },
 methods:{
   fetchUser(){ //Grabs the API from the Vue.js app
+  //   fetch('api/comments/')
+  //   .then( response => response.json())
+  //   .then( json => {
+  //     this.comments=json;
+  //     console.log(this.comments)}
+  //     );
+  //   });
+
     fetch('api/comments/')
-    .then(response => response.json())
-    .then(json => {
-      this.comments=json;
-      console.log(this.comments);
+    .then( response => response.json())
+    .then( json => {
+      this.id=json;
+      console.log(json)}
+      );
+    });
+    fetch('api/comments/')
+    .then( response => response.json())
+    .then( json => {
+      this.commentText=json;
+      console.log(this.commentText)}
+      );
     });
   }
   created(){
