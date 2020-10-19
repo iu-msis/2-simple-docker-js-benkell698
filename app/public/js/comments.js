@@ -1,4 +1,4 @@
-var app = new Vue({
+commentApp = new Vue({
   el: '#commmentTable',
   data: {
     comments: [{
