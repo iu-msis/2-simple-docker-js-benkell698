@@ -4,36 +4,47 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Comments</title>
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <!-- my custom CSS goes here -->
+      <link rel="stylesheet" href="css/site.css">
+    </head>
+    <body>
+      <h1 id="pagetitle">Book Information</h1>
+      <nav>
+        <a class="nav_links" href="index.html">Home</a>
+        <a class="nav_links" href="profile.html">Profile</a>
+        <a class="nav_links" href="bookinfo.html">Book Information</a>
+        <a class="nav_links" href="old.html">Previous HW Page</a>
+        <a class="nav_links" href="dscomments.html">Comments</a>
+      </nav>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <!-- my custom CSS goes here -->
-    <link rel="stylesheet" href="css/styles.css">
-
-    <title>Triage — Triage App</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-md">
-      <a class="navbar-brand" href="#">Triage App</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="page_two.html">Manage Patients</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Finish Visits</a>
-          </li>
-        </ul>
+<div class="container-fluid">
+    <div class="row" id="commentsapp">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-ex-3">
+        <div class="Comments" v-for='comment in comments'>
+          <span class="id"> Id: {{ Comments.commentId }}</span>,<br/>
+          <span class="commentText"> Id: {{ Comments.commentText }}</span>
+        </div><br/>
       </div>
-    </nav>
+    </div>
+    <form v-on:submit.prevent="createComments()">
+      <div class="Comments">
+        <label for="id"> Id </label>
+        <input type="text" v-model="newComments.commentId" class="form-control" id="Comments.commentId" placeholder="Type id here">
+        <label for="commentText"> Comment </label>
+        <input type="text" v-model="newComments.commentText" class="form-control" id="Comments.commentText" placeholder="Type comments here">
+      </div><br/>
+      <input type="submit" value="Add Comment" class="button">
+    </form>
+</div>
 
-    <div class="container-fluid">
+
+
+
+
+    <!-- <div class="container-fluid">
       <div class="row" id="triagePage">
         <div id="cardPaneLeft" class="col cardPane cardPaneLeft">
           <form method="post" v-on:submit.prevent="handleNewPtForm">
@@ -71,8 +82,8 @@
             <span class="birthDate float-right">{{ pt.dob }}</span>
           </div>
 
-          <!-- <button v-on:click="yell()">Click Me!</button> -->
-        </div>
+           <button v-on:click="yell()">Click Me!</button> -->
+        <!-- </div>
 
         <div class="col-6">
           <h1>New Visit</h1>
@@ -116,7 +127,7 @@
 
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- END content -->
 
     <!-- Footer? Insert here -->
