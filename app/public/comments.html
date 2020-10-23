@@ -20,7 +20,7 @@
         <a class="nav_links" href="dscomments.html">Comments</a>
       </nav>
 
-<div class="container-fluid">
+<!-- <div class="container-fluid">
     <div class="row" id="commentsapp">
       <div class="col-lg-3 col-md-3 col-sm-3 col-ex-3">
         <div class="Comments" v-for='comment in comments'>
@@ -39,14 +39,14 @@
       </div><br/>
       <input type="submit" value="Add Comment" class="button">
     </form>
-</div>
+</div> -->
 
 <div id="commentsapp">
   <table id="commentTable" class="sort table ttable-hover">
     <thead>
       <tr>
         <th>Comment Id</th>
-        <th>Comment</th>
+        <th>Comment Text</th>
       </tr>
     </thead>
     <tbody id="commentTableBody">
@@ -56,10 +56,10 @@
       </tr>
     </tbody>
   </table>
-  <form id="newComment" v-on:submit.prevent="createComment()">
+  <form id="newCommentForm" v-on:submit.prevent="createComment()">
     <label for="newComment">Comment</label><br>
       <input id="commentText" type="text" v-model="newComment.commentText"><br>
-    <input id="submitComment" type="submit" value="Add Comment" class="btn btn-primary">
+    <input id="submitNewComment" type="submit" value="Submit Comment" class="btn btn-primary">
   </form>
 </div>
 
