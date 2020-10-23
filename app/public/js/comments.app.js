@@ -13,7 +13,7 @@ comapp = new Vue({
     },
 
   methods:{
-    fetchComments: functions(){
+    fetchComments: function(){
       fetch('api/comments/')
       .then(response => response.json())
       .then(json => {
