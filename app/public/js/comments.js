@@ -1,36 +1,51 @@
 comapp = new Vue({
   el: '#commentsapp',
   data: {
-    Comments: [{
+    oldComments: [{
       commentId: '',
       commentText: ''
     }],
-    newComments: {
-      commentId: '',
+    newComment: {
       commentText: ''
+    },
+    created(){
+      this.fetchComments();
     },
 
   methods:{
-    fetchComments(){
-      fetch('api/comments/index.php')
+    fetchComments: functions(){
+      fetch('api/comments/')
       .then(response => response.json())
       .then(json => {
-        this.Comments=json;
-        console.log(this.Comments)
+        this.oldComments=json;
+        console.log(this.oldComments)
       });
-    }
-    createComments(){
-      this.newComments.commentId = (this.newComments.commentText)
+    },
+    createComment: function(){
+      // this.newComment.commentId = (this.newComment.commentText)
       fetch('api/comments/create.php', {
         method: 'POST',
-        body: JSON.stringify(this.newComments),
+        body: JSON.stringify(this.newComment),
         headers: {
           "Content-Type": "application/json; charset=utf-8"
         }
       })
+      .then(response => response.json())
+      .then(json => {
+        console.log("Retrieved:", json);
+        this.oldComments.push(json[0]);
+        this.newComment=this.newCommentInfo();
+      });
+      console.log("Creating (POSTing)...!");
+      console.log(this.newComment);
+    },
+    newCommentInfo() {
+      return {
+        commentText: ''
+      }
     }
   }
-
+})
 
 
 //     //CLASS CODES
