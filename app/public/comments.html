@@ -29,7 +29,7 @@
         </div><br/>
       </div>
     </div>
-    
+
     <form v-on:submit.prevent="createComment()">
       <div class="Comments">
         <label for="id"> Id </label>
@@ -41,7 +41,27 @@
     </form>
 </div>
 
-
+<div id="commentsapp">
+  <table id="commentTable" class="sort table ttable-hover">
+    <thead>
+      <tr>
+        <th>Comment Id</th>
+        <th>Comment</th>
+      </tr>
+    </thead>
+    <tbody id="commentTableBody">
+      <tr v-for="c in oldComments">
+        <td>ID: {{c.commentId}}</td>
+        <td>Comment Text: {{c.commentText}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <form id="newComment" v-on:submit.prevent="createComment()">
+    <label for="newComment">Comment</label><br>
+      <input id="commentText" type="text" v-model="newComment.commentText"><br>
+    <input id="submitComment" type="submit" value="Add Comment" class="btn btn-primary">
+  </form>
+</div>
 
 
 
