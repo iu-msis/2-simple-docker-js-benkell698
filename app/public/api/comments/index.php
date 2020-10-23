@@ -9,10 +9,10 @@ $db = DbConnection::getConnection();
 $sql = 'SELECT * FROM Comments';
 $vars = [];
 
- if (isset($_GET['id'])) {
+ if (isset($_GET['commentId'])) {
    // This is an example of a parameterized query
-   $sql = 'SELECT * FROM Comments WHERE id = ?';
-   $vars = [ $_GET['id'] ];
+   $sql = 'SELECT * FROM Comments WHERE commentId = ?';
+   $vars = [ $_GET['commentId'] ];
  }
 
 $stmt = $db->prepare($sql);
@@ -26,3 +26,4 @@ $json = json_encode($Comments, JSON_PRETTY_PRINT);
 // Step 4: Output
 header('Content-Type: application/json');
 echo $json;
+?>
