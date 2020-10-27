@@ -27,8 +27,8 @@
 -- INSERT INTO PatientVisit (visitId, patientGuid, visitDescription) VALUES
 -- (1, 'SOME-REALLY-LONG-1234', 'Anxiety from D&S');
 
-create database msis;
-use msis;
+create database Comments;
+use Comments;
 CREATE TABLE Comments (
   id INTEGER,
   commentText TEXT
