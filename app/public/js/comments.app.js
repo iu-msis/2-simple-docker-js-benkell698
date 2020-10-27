@@ -15,7 +15,7 @@ var app = new Vue({
 
   methods: {
     fetchComments: function(){
-      fetch("api/comments/")
+      fetch("api/comments/index.php")
       .then(response => response.json())
       .then(json => {
         this.oldComments=json;
