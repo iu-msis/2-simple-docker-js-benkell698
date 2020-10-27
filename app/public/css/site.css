@@ -1,4 +1,5 @@
-html {
+html,
+body {
   background-color: lightgray;
   text-color: black;
 }
