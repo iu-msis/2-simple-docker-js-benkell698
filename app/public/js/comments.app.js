@@ -9,7 +9,7 @@ var app = new Vue({
       commentText: '',
     }
   },
-    created(){
+    created() {
       this.fetchComments();
     },
 
@@ -36,7 +36,12 @@ var app = new Vue({
       .then(json => {
         console.log("Retrieved:", json);
         this.oldComments.push(json[0]);
+        //above line adds the newComment to the end of the oldComments
         this.newComment= this.newCommentInfo();
+        // console.log("Retrieved:", json);
+        // this.oldComments = json;
+        // //above line adds the newComment to the end of the oldComments
+        // this.newComment= this.newCommentInfo();
       });
         console.log("Creating (POSTing)...!");
         console.log(this.newComment);
@@ -45,7 +50,16 @@ var app = new Vue({
       return {
         commentText: ''
       }
-    }
+    },
+    // created() {
+    //   fetch("api/comments/")
+    //   .then( response => response.json() )
+    //   .then( json => {
+    //     this.oldComments = json;
+    //
+    //     console.log(json)}
+    //   );
+    // },
   }
 
 })
