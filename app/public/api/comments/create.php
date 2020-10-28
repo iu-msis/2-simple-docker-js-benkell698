@@ -13,7 +13,7 @@ $db = DbConnection::getConnection();
 // Note the use of parameterized statements to avoid injection
 $stmt = $db->prepare(
   'INSERT INTO Comments (commentText)
-  VALUES (?)'
+  VALUES (?, )'
 );
 
 $stmt->execute([
@@ -27,6 +27,6 @@ $stmt->execute([
 // Here, instead of giving output, I'm redirecting to the SELECT API,
 // just in case the data changed by entering it
 header('HTTP/1.1 303 See Other');
-header('Location: ../comments/?id=' . $pk);
+header('Location: ../Comments/?id=' . $pk);
 
 ?>
